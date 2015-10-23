@@ -13,6 +13,7 @@ header {
 h1, h2, h3, h4, h6 {
     font-family: "Playbill", serif;
     margin: 0;
+    white-space: nowrap;
 }
 h1 {
     font-size: 8em;
@@ -31,17 +32,12 @@ h6:after {
     font-size: 4rem;
     font-family: monospace;
 }
-h2 {
-    font-size: 12em;
-    letter-spacing: 15px;
-    word-spacing: -5px;
-}
 h5 {
     font-size: 1em;
     margin: 0;
 }
 h3 {
-    font-size: 5em;
+    font-size: 4.7em;
 }
 p {
     font-size: 1.1em;
@@ -60,10 +56,33 @@ p {
     border-right: solid 1px black;
     padding: 0 20px;
 }
+h2 {
+    font-size: 12em;
+    word-spacing: -5px;
+    text-align: center;
+    line-height: .9;
+    white-space: nowrap;
+}
+h2:first-child {
+    font-size: 21em;
+    letter-spacing: .1em;
+}
+h2:nth-child(2) {
+    font-size: 9em;
+    letter-spacing: .35em;
+}
+h2:nth-child(3) {
+    letter-spacing: .55em;
+}
 #main-article p {
-    -webkit-columns: 300px 2;
-    -moz-columns: 300px 2;
-    columns: 50% 2;
+    -webkit-columns: 200px 3;
+    -moz-columns: 200px 3;
+    columns: 200px 3;
+}
+em {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
 }
 .side {
     position: absolute;
@@ -78,13 +97,35 @@ p {
 }
 #ad h3 {
     white-space: normal;
+    word-spacing: -20px;
+    font-size: 5em;
+}
+#ad h3:first-child {
+    font-size: 3em;
+    letter-spacing: .06em;
+}
+#ad h3:nth-child(2) {
+    letter-spacing: .17em;
+}
+#ad h3:nth-child(3) {
+    letter-spacing: .35em;
+}
+#ad h3:nth-child(4) {
+    letter-spacing: .33em;
 }
 #ad img {
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto 0;
 }
 #page-number {
     position: relative;
     bottom: 0;
     text-align: center;
+}
+#side-article1 h3:first-child {
+    font-size: 8em;
+}
+#side-article1 h3:nth-child(2) {
+    font-size: 3em;
+    letter-spacing: .14em;
 }
