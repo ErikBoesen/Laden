@@ -6,6 +6,27 @@ body {
 	-moz-osx-font-smoothing: grayscale;
     text-align: justify;
     font-family: garamond;
+    animation: 3s fadeIn ease-in-out;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    to {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    to {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
 }
 header {
     text-align: center;
@@ -34,10 +55,11 @@ h6:after {
 }
 h5 {
     font-size: 1em;
+    text-align: center;
     margin: 0;
 }
 h3 {
-    font-size: 4.7em;
+    font-size: 5.5vw;
 }
 p {
     font-size: 1.1em;
@@ -57,21 +79,21 @@ p {
     padding: 0 20px;
 }
 h2 {
-    font-size: 12em;
     word-spacing: -5px;
     text-align: center;
     line-height: .9;
     white-space: nowrap;
 }
 h2:first-child {
-    font-size: 21em;
+    font-size: 24.8vw;
     letter-spacing: .1em;
 }
 h2:nth-child(2) {
-    font-size: 9em;
+    font-size: 10.4vw;
     letter-spacing: .35em;
 }
 h2:nth-child(3) {
+    font-size: 14.1vw;
     letter-spacing: .55em;
 }
 #main-article p {
@@ -95,25 +117,28 @@ em {
 #right {
     right: 15px;
 }
-#ad h3 {
+.ad h3 {
     white-space: normal;
-    word-spacing: -20px;
-    font-size: 5em;
+    font-size: 5.8vw;
 }
-#ad h3:first-child {
-    font-size: 3em;
+#ad1 h3:first-child {
+    font-size: 3.5vw;
     letter-spacing: .06em;
 }
-#ad h3:nth-child(2) {
+#ad1 h3:nth-child(2) {
     letter-spacing: .17em;
 }
-#ad h3:nth-child(3) {
+#ad1 h3:nth-child(3) {
     letter-spacing: .35em;
 }
-#ad h3:nth-child(4) {
+#ad1 h3:nth-child(4) {
     letter-spacing: .33em;
 }
-#ad img {
+#ad2 h3:first-child {
+    font-size: 3.3vw;
+    white-space: nowrap;
+}
+.ad img {
     width: 100%;
     margin: 10px auto 0;
 }
@@ -123,9 +148,9 @@ em {
     text-align: center;
 }
 #side-article1 h3:first-child {
-    font-size: 8em;
+    font-size: 9.4vw;
 }
 #side-article1 h3:nth-child(2) {
-    font-size: 3em;
+    font-size: 3.55vw;
     letter-spacing: .14em;
 }
