@@ -1,59 +1,79 @@
+/*
+Theme Name: Laden
+Theme URI: https://github.com/ErikBoesen/Laden
+Author: ErikBoesen
+Author URI: http://erikboesen.com/
+Description: A minimalistic theme designed to look like an old-timey newspaper.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: laden
+Tags: minimalist, minimal, minimalistic, newspaper, old-fasioned, old, retro
+*/
+
+body {
+    text-align: center;
+}
+#sidebar {
+}
+#delimiter {
+    clear: both;
+}
+footer {
+    border: 2px #a2a2a2 solid;
+}
+.title {
+    font-size: 11pt;
+    font-weight: bold;
+}
 * {
     box-sizing: border-box;
 }
 body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-align: justify;
     font-family: garamond;
     animation: 3s fadeIn ease-in-out;
 }
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    to {
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    to {
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-}
 header {
     text-align: center;
 }
-h1, h2, h3, h4, h6 {
-    font-family: "Playbill", serif;
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+}
+header a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+    font-family: 'Playbill', serif;
     margin: 0;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 h1 {
     font-size: 8em;
     margin-top: 15px;
-    letter-spacing: 10px;
 }
 h6 {
     font-size: 2em;
 }
-h6:after {
-    content: "...........................................";
+#header:after {
+    content: '...........................................';
     display: block;
     position: relative;
     top: -20px;
-    letter-spacing: -10px;
     font-size: 4rem;
     font-family: monospace;
 }
-h5 {
+.entry-header {
     font-size: 1em;
     text-align: center;
     margin: 0;
@@ -79,23 +99,9 @@ p {
     padding: 0 20px;
 }
 h2 {
-    word-spacing: -5px;
     text-align: center;
     line-height: .9;
     white-space: nowrap;
-}
-h2:first-child {
-    font-size: 24.8vw;
-    letter-spacing: .1em;
-    margin-top: -50px;
-}
-h2:nth-child(2) {
-    font-size: 10.4vw;
-    letter-spacing: .35em;
-}
-h2:nth-child(3) {
-    font-size: 14.1vw;
-    letter-spacing: .55em;
 }
 #main-article p {
     -webkit-columns: 200px 3;
@@ -121,32 +127,20 @@ h2:nth-child(3) {
     text-align: right;
     margin-top: 5px;
 }
+aside {
+    width: 23%;
+    border: 2px #a2a2a2 solid;
+    float: right;
+}
 #left {
     left: 15px;
 }
 #right {
     right: 15px;
 }
-.ad h3 {
+.textWidget h3 {
     white-space: normal;
     font-size: 5.8vw;
-}
-#ad1 h3:first-child {
-    font-size: 3.5vw;
-    letter-spacing: .06em;
-}
-#ad1 h3:nth-child(2) {
-    letter-spacing: .17em;
-}
-#ad1 h3:nth-child(3) {
-    letter-spacing: .35em;
-}
-#ad1 h3:nth-child(4) {
-    letter-spacing: .33em;
-}
-#ad2 h3:first-child {
-    font-size: 3.3vw;
-    white-space: nowrap;
 }
 .ad img {
     width: 100%;
@@ -156,20 +150,4 @@ h2:nth-child(3) {
     position: relative;
     bottom: 0;
     text-align: center;
-}
-.side-article:first-of-type h3:first-child {
-    font-size: 9.4vw;
-}
-.side-article:first-of-type h3:nth-child(2) {
-    font-size: 3.55vw;
-    letter-spacing: .14em;
-}
-.side-article:last-of-type h3:first-child {
-    font-size: 4vw;
-}
-.side-article:last-of-type h3:nth-child(2) {
-    font-size: 5vw;
-}
-.side-article:last-of-type h3:nth-child(4) {
-    font-size: 4.5vw;
 }
